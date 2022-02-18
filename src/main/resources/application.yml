@@ -1,0 +1,65 @@
+#对空格和缩进的要求很严格！
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Yy4396yy
+    url: jdbc:mysql://localhost:3306/架构_test?userUnicode=true&characterEncoding=utf-8
+  jpa:
+    hibernate:
+      ddl-auto: update #自动更新
+
+    show-sql: true  #日志中显示sql语句
+    properties:
+      hibernate:
+        fromat_sql = true
+  mail:
+    host: smtp.qq.com
+    username: 2325044041@qq.com
+    #这个不是QQ密码，而是自己邮箱-账户-开启POP3/SMTP时的客户端授权码
+    password: gqaagwtiztekdjce #QQ邮箱客户端授权码
+    properties:
+      mail:
+        smtp:
+          # 需要验证登录名和密码
+          auth: true
+        starttls:
+          # 需要TLS认证 保证发送邮件安全验证
+          enable: true
+          required: true
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  freemarker:
+    cache: false
+
+  mvc:
+    format:
+      date: yyyy-MM-dd
+      date-time: yyyy-MM-dd HH:mm:ss
+    hiddenmethod:
+      filter:
+        enabled: true
+
+server:
+  port: 8083
+
+#七牛云
+#qiniu:
+#  accessKey: 1b-drkEL9Vrzl-z8vMv8loT1b7xP_igdwzM3aMXK
+#  secretKey: 2jn0jrQR3t7S_UxDXZ6rxXnBKpea0-GMXhIdwPEv
+#  bucket: ets-file-database
+#  path: r3dk6q8tg.hn-bkt.clouddn.com
+qiniu:
+  accessKey: WbSYuzTj7bD7eZ1oY3Um9T1B2vF4UKePc7WkHVC8
+  secretKey: m8f75nldJ6qNMGAMYUUVG5uy3E6m8c-ZHjxvwZBT
+  bucket: ets-file-data
+  path: r4au73ulm.hn-bkt.clouddn.com
+
+baseUploadUrl: d://temp/
+
+
+#发邮件
+# QQ邮箱
