@@ -4,7 +4,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Yy4396yy
+    password: #######
     url: jdbc:mysql://localhost:3306/架构_test?userUnicode=true&characterEncoding=utf-8
   jpa:
     hibernate:
@@ -16,9 +16,9 @@ spring:
         fromat_sql = true
   mail:
     host: smtp.qq.com
-    username: 2325044041@qq.com
+    username: #######
     #这个不是QQ密码，而是自己邮箱-账户-开启POP3/SMTP时的客户端授权码
-    password: gqaagwtiztekdjce #QQ邮箱客户端授权码
+    password: ####### #QQ邮箱客户端授权码
     properties:
       mail:
         smtp:
@@ -54,8 +54,8 @@ server:
 #  path: r3dk6q8tg.hn-bkt.clouddn.com
 qiniu:
   accessKey: WbSYuzTj7bD7eZ1oY3Um9T1B2vF4UKePc7WkHVC8
-  secretKey: m8f75nldJ6qNMGAMYUUVG5uy3E6m8c-ZHjxvwZBT
-  bucket: ets-file-data
+  secretKey: #######
+  bucket: #######
   path: r4au73ulm.hn-bkt.clouddn.com
 
 baseUploadUrl: d://temp/
